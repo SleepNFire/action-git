@@ -9,4 +9,4 @@ jobs:
     steps:
       - name: Curl firdge.rioc.fr/ping
         run: |
-          curl -v https://fridge.rioc.fr/ping
+          curl -v -k https://fridge.rioc.fr/ping
