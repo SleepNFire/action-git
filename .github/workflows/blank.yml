@@ -1,0 +1,12 @@
+name: Ping fridge.rioc.fr
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ping_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl firdge.rioc.fr/ping
+        run: |
+          curl -v https://fridge.rioc.fr/ping
